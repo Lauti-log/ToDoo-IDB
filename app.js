@@ -39,10 +39,15 @@ document.getElementById("add").addEventListener("click", ()=>{
             if (confirm("Hay elementos sin guardar ¿Quieres continuar?")) {
                 addObjeto({nombre})
                 leerObjeto()
+                let nombreValor = document.getElementById("nombre")
+                nombreValor.value = ""
+                
             }
         } else {
             addObjeto({nombre})
             leerObjeto()
+            let nombreValor = document.getElementById("nombre")
+            nombreValor.value = ""
         }
     }
 })
