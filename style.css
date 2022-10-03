@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.agregador{
+    text-align: center;
+    margin: 40px;
+}
+
+#nombre , #add{
+    padding: 6px 8px;
+}
+
+.contenedor-nombres{
+    margin: 15px 100px;
+}
+
+.nombre{
+    display: grid;
+    grid-template-columns: minmax(100px, 300px) 1fr;
+    align-items: center; 
+    border-top: 2px solid rgb(22, 56, 90);
+    padding: 10px;
+}
+
+.opciones{
+    justify-self: end;
+}
+
+.opciones button{
+    padding: 6px 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.posible{
+    color: rgb(21, 124, 226);
+}
+
+.posible:hover{
+    color: rgb(6, 80, 153);
+}
+
+.imposible{
+    color: rgb(102, 102, 102);
+}
+
+.eliminar:hover{
+    color: #444;
+}
